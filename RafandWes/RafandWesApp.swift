@@ -24,6 +24,7 @@ struct RafandWesApp: App {
     }()
 
     
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
