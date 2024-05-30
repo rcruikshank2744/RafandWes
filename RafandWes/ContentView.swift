@@ -12,18 +12,33 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     
+    func chainsawPressed(){
+        print("chainsaw pressed")
+    }
+    
     var body: some View {
+        
+        Button(action:{chainsawPressed()}) {
+            Image("transparentChainsaw")
+                .resizable()
+                .frame(width: 400, height: 800)
+                .background(Color.red)
+    
+        }
+            
 
         ZStack{
             Color.red
                 .ignoresSafeArea()
         }
-        VStack {
-            Image("transparentChainsaw")
-                .resizable()
-                .frame(width: 400, height: 800)
-                .background(Color.red)
+        //VStack {
+            //Image("transparentChainsaw")
+                //.resizable()
+                //.frame(width: 400, height: 800)
+                //.background(Color.red)
+            
+
         }
-        .padding()
+        //.padding()
     }
-}
+//}
