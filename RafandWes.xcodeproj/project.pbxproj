@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C4321BAF2C08FC0A008F7DBE /* chainsawBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4321BAE2C08FC0A008F7DBE /* chainsawBoard.storyboard */; };
+		CA82267C2C08FE4900F23A53 /* chainsaw-92374.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA82267B2C08FE4900F23A53 /* chainsaw-92374.mp3 */; };
 		CAF413FB2BFFC895000BEF80 /* RafandWesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF413FA2BFFC895000BEF80 /* RafandWesApp.swift */; };
 		CAF413FD2BFFC895000BEF80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF413FC2BFFC895000BEF80 /* ContentView.swift */; };
 		CAF413FF2BFFC895000BEF80 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF413FE2BFFC895000BEF80 /* Item.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		C4321BAE2C08FC0A008F7DBE /* chainsawBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chainsawBoard.storyboard; sourceTree = "<group>"; };
+		CA82267B2C08FE4900F23A53 /* chainsaw-92374.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "chainsaw-92374.mp3"; path = "../../../Downloads/chainsaw-92374.mp3"; sourceTree = "<group>"; };
 		CAF413F72BFFC895000BEF80 /* RafandWes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RafandWes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF413FA2BFFC895000BEF80 /* RafandWesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RafandWesApp.swift; sourceTree = "<group>"; };
 		CAF413FC2BFFC895000BEF80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		CAF413F92BFFC895000BEF80 /* RafandWes */ = {
 			isa = PBXGroup;
 			children = (
+				CA82267B2C08FE4900F23A53 /* chainsaw-92374.mp3 */,
 				CAF413FA2BFFC895000BEF80 /* RafandWesApp.swift */,
 				C4321BAE2C08FC0A008F7DBE /* chainsawBoard.storyboard */,
 				CAF413FC2BFFC895000BEF80 /* ContentView.swift */,
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA82267C2C08FE4900F23A53 /* chainsaw-92374.mp3 in Resources */,
 				CAF414042BFFC896000BEF80 /* Preview Assets.xcassets in Resources */,
 				CAF414012BFFC896000BEF80 /* Assets.xcassets in Resources */,
 				C4321BAF2C08FC0A008F7DBE /* chainsawBoard.storyboard in Resources */,
