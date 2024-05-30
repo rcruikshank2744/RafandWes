@@ -23,14 +23,12 @@ struct RafandWesApp: App {
         }
     }()
 
-
-    
-    
-
     var body: some Scene {
         WindowGroup {
             ContentView()
-            
+            ZStack{
+                Color.red
+            }
         }
         .modelContainer(sharedModelContainer)
     }
