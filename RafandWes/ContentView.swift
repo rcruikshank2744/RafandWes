@@ -13,12 +13,17 @@ struct ContentView: View {
     @Query private var items: [Item]
     
     var body: some View {
-        
-        Image("435-4354164_last-year-wiki-chainsaw-hd-png-download-Photoroom.png-Photoroom")
+
         ZStack{
             Color.red
                 .ignoresSafeArea()
-            
         }
+        VStack {
+            Image("435-4354164_last-year-wiki-chainsaw-hd-png-download-Photoroom.png-Photoroom")
+                .resizable()
+                .frame(width: 500, height: 800)
+                .background(Color.red)
+        }
+        .padding()
     }
 }
