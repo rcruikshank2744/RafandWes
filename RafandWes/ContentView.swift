@@ -19,9 +19,9 @@ struct ContentView: View {
                 .ignoresSafeArea()
         }
         VStack {
-            Image("435-4354164_last-year-wiki-chainsaw-hd-png-download-Photoroom.png-Photoroom")
+            Image("transparentChainsaw")
                 .resizable()
-                .frame(width: 500, height: 800)
+                .frame(width: 400, height: 800)
                 .background(Color.red)
         }
         .padding()
