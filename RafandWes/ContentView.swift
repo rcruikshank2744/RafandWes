@@ -20,17 +20,19 @@ struct ContentView: View {
         self.playSound()
     }
     func playSound(){
-        let url = Bundle.main.url(forResource: "chainsaw-92374", withExtension: "mp3")
+        let url = Bundle.main.url(forResource: "chainsawOne", withExtension: "wav")
         player = try! AVAudioPlayer(contentsOf: url!)
         player!.play()
+        
     }
     var body: some View {
         
-    Button(action:{chainsawPressed()}) {
+        Button(action:{chainsawPressed()}) {
             Image("transparentChainsaw")
                 .resizable()
                 .frame(width: 400, height: 800)
                 .background(Color.red)
+                .disabled(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
     
         }
             
