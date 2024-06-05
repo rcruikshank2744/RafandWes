@@ -42,18 +42,14 @@ struct ContentView: View {
         
         }
 
-        ZStack{
-            Color.red
-                .ignoresSafeArea()
-        }
-        //VStack {
-            //Image("transparentChainsaw")
-                //.resizable()
-                //.frame(width: 400, height: 800)
-                //.background(Color.red)
-            
+}
 
-        }
-        //.padding()
-    }
-//}
+
+
+
+
+
+
+
+
+

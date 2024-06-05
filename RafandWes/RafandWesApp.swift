@@ -18,7 +18,8 @@ struct RafandWesApp: App {
 
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
+        } 
+        catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
