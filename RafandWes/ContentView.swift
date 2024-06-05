@@ -28,11 +28,18 @@ struct ContentView: View {
 
     
     var body: some View {
+        
+        ZStack{
+            Color.red
+            .edgesIgnoringSafeArea(.all)
+            Text("")
+        }
+        
         Button(action:{chainsawPressed()}) {
-            Image("transparentChainsaw")
+            Image("transparentChainsawTwo")
                 .resizable()
-                .frame(width: 400, height: 800)
-                .background(Color.red)
+                .frame(width: 300, height: 600)
+                //.background(Color.red)
                 .disabled(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
     
         }

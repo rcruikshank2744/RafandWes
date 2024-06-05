@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C4321BAF2C08FC0A008F7DBE /* chainsawBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4321BAE2C08FC0A008F7DBE /* chainsawBoard.storyboard */; };
+		C43A58E92C10E5D200A6DA0F /* ChainsawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A58E82C10E5D200A6DA0F /* ChainsawViewController.swift */; };
 		CA218EC92C0E3F19005EFF83 /* chainsawOne.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA218EC82C0E3F19005EFF83 /* chainsawOne.wav */; };
 		CA82267C2C08FE4900F23A53 /* chainsaw-92374.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA82267B2C08FE4900F23A53 /* chainsaw-92374.mp3 */; };
 		CAF413FB2BFFC895000BEF80 /* RafandWesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF413FA2BFFC895000BEF80 /* RafandWesApp.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		C4321BAE2C08FC0A008F7DBE /* chainsawBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chainsawBoard.storyboard; sourceTree = "<group>"; };
+		C43A58E82C10E5D200A6DA0F /* ChainsawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainsawViewController.swift; sourceTree = "<group>"; };
 		CA218EC82C0E3F19005EFF83 /* chainsawOne.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chainsawOne.wav; sourceTree = "<group>"; };
 		CA82267B2C08FE4900F23A53 /* chainsaw-92374.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "chainsaw-92374.mp3"; path = "../../../Downloads/chainsaw-92374.mp3"; sourceTree = "<group>"; };
 		CAF413F72BFFC895000BEF80 /* RafandWes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RafandWes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,9 +64,10 @@
 				CA82267B2C08FE4900F23A53 /* chainsaw-92374.mp3 */,
 				CA218EC82C0E3F19005EFF83 /* chainsawOne.wav */,
 				CAF413FA2BFFC895000BEF80 /* RafandWesApp.swift */,
-				C4321BAE2C08FC0A008F7DBE /* chainsawBoard.storyboard */,
 				CAF413FC2BFFC895000BEF80 /* ContentView.swift */,
 				CAF413FE2BFFC895000BEF80 /* Item.swift */,
+				C4321BAE2C08FC0A008F7DBE /* chainsawBoard.storyboard */,
+				C43A58E82C10E5D200A6DA0F /* ChainsawViewController.swift */,
 				CAF414002BFFC896000BEF80 /* Assets.xcassets */,
 				CAF414022BFFC896000BEF80 /* Preview Content */,
 			);
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43A58E92C10E5D200A6DA0F /* ChainsawViewController.swift in Sources */,
 				CAF413FD2BFFC895000BEF80 /* ContentView.swift in Sources */,
 				CAF413FF2BFFC895000BEF80 /* Item.swift in Sources */,
 				CAF413FB2BFFC895000BEF80 /* RafandWesApp.swift in Sources */,
