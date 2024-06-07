@@ -15,10 +15,10 @@ class ChainsawViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func convertDegreesRadians(degrees: CGFloat) -> {
-        return degrees / 180.0 * CGFloat.pi
+    //func convertDegreesRadians(degrees: CGFloat) -> {
+       // return degrees / 180.0 * CGFloat.pi
     
-    }
+   // }
     
 
     /*

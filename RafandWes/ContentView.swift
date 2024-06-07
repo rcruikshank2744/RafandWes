@@ -14,7 +14,7 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     
-
+    
     @State var longPressGesture = false
     var body: some View {
         ZStack{
@@ -31,25 +31,26 @@ struct ContentView: View {
                     print("long press ended")
                     longPressGesture.toggle()
                 })
-                    .onChange(of: longPressGesture, perform:
-                                {value in
-                        if longPressGesture {
-                            playSound(sound: "chainsawOne", type: "wav")
-                        } else {
-                            stopSound(sound: "chainsawOne", type: "wav")
-                        }
-                    })
-        
+            .onChange(of: longPressGesture, perform:
+                        {value in
+                if longPressGesture {
+                    playSound(sound: "chainsawOne", type: "wav")
+                } else {
+                    stopSound(sound: "chainsawOne", type: "wav")
+                }
+            })
+            
         }
-
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
-
-
-
-
-
-
-
-
-
-
