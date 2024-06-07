@@ -14,7 +14,7 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     
-    
+    let impactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
     @State var longPressGesture = false
     var body: some View {
         ZStack{
@@ -35,6 +35,7 @@ struct ContentView: View {
                         {value in
                 if longPressGesture {
                     playSound(sound: "chainsawOne", type: "wav")
+                    impactFeedbackGenerator.impactOccurred()
                 } else {
                     stopSound(sound: "chainsawOne", type: "wav")
                 }
