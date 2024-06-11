@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C40F9F462C138BD600EA4EF2 /* chainsawTwo.wav in Resources */ = {isa = PBXBuildFile; fileRef = C40F9F452C138BD600EA4EF2 /* chainsawTwo.wav */; };
+		C4197EC42C18C80100976913 /* chainsawThree.wav in Resources */ = {isa = PBXBuildFile; fileRef = C4197EC32C18C80100976913 /* chainsawThree.wav */; };
+		C4197EC62C18CD5400976913 /* chainsawTypeBeatOne.wav in Resources */ = {isa = PBXBuildFile; fileRef = C4197EC52C18CD5400976913 /* chainsawTypeBeatOne.wav */; };
 		C4321BAF2C08FC0A008F7DBE /* chainsawBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4321BAE2C08FC0A008F7DBE /* chainsawBoard.storyboard */; };
 		C43A58E92C10E5D200A6DA0F /* ChainsawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A58E82C10E5D200A6DA0F /* ChainsawViewController.swift */; };
 		CA218EC92C0E3F19005EFF83 /* chainsawOne.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA218EC82C0E3F19005EFF83 /* chainsawOne.wav */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		C40F9F452C138BD600EA4EF2 /* chainsawTwo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chainsawTwo.wav; sourceTree = "<group>"; };
+		C4197EC32C18C80100976913 /* chainsawThree.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chainsawThree.wav; sourceTree = "<group>"; };
+		C4197EC52C18CD5400976913 /* chainsawTypeBeatOne.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chainsawTypeBeatOne.wav; sourceTree = "<group>"; };
 		C4321BAE2C08FC0A008F7DBE /* chainsawBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = chainsawBoard.storyboard; sourceTree = "<group>"; };
 		C43A58E82C10E5D200A6DA0F /* ChainsawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainsawViewController.swift; sourceTree = "<group>"; };
 		CA218EC82C0E3F19005EFF83 /* chainsawOne.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chainsawOne.wav; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 			children = (
 				CA218EC82C0E3F19005EFF83 /* chainsawOne.wav */,
 				C40F9F452C138BD600EA4EF2 /* chainsawTwo.wav */,
+				C4197EC32C18C80100976913 /* chainsawThree.wav */,
+				C4197EC52C18CD5400976913 /* chainsawTypeBeatOne.wav */,
 				CAF413FA2BFFC895000BEF80 /* RafandWesApp.swift */,
 				CAF413FC2BFFC895000BEF80 /* ContentView.swift */,
 				CA55B2352C10DC66005636BF /* Sounds.swift */,
@@ -144,8 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAF414042BFFC896000BEF80 /* Preview Assets.xcassets in Resources */,
+				C4197EC42C18C80100976913 /* chainsawThree.wav in Resources */,
 				CAF414012BFFC896000BEF80 /* Assets.xcassets in Resources */,
 				C4321BAF2C08FC0A008F7DBE /* chainsawBoard.storyboard in Resources */,
+				C4197EC62C18CD5400976913 /* chainsawTypeBeatOne.wav in Resources */,
 				C40F9F462C138BD600EA4EF2 /* chainsawTwo.wav in Resources */,
 				CA218EC92C0E3F19005EFF83 /* chainsawOne.wav in Resources */,
 			);
