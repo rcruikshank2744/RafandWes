@@ -16,6 +16,11 @@ struct ContentView: View {
     
     let impactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
     @State var longPressGesture = false
+<<<<<<< HEAD
+    let soundSelect = Int.random(in: 0..<4)
+
+=======
+>>>>>>> 3a83f8ea1dff1c6bbeb0aabb292481e848473b61
     var body: some View {
         ZStack{
             Button(action:{
@@ -30,6 +35,49 @@ struct ContentView: View {
                 .onEnded{ _ in
                     print("long press ended")
                     longPressGesture.toggle()
+<<<<<<< HEAD
+            })
+            
+            .onChange(of: longPressGesture, perform: {
+                value in
+                print(soundSelect)
+                
+                if(soundSelect == 0){
+                    if longPressGesture {
+                        playSound(sound: "chainsawOne", type: "wav")
+                        print("chainsawOne")
+                    }
+                    else {stopSound(sound: "chainsawOne", type: "wav")}
+                }
+                
+                else if(soundSelect == 1){
+                    if longPressGesture {
+                        playSound(sound: "chainsawTwo", type: "wav")
+                        print("chainsawTwo")
+                    }
+                    else {stopSound(sound: "chainsawTwo", type: "wav")}
+                }
+                
+                else if(soundSelect == 2){
+                    if longPressGesture {
+                        playSound(sound: "chainsawThree", type: "wav")
+                        print("chainsawThree")
+                    }
+                    else {stopSound(sound: "chainsawThree", type: "wav")}
+                }
+                
+                else if(soundSelect == 3){
+                    if longPressGesture {
+                        playSound(sound: "chainsawTypeBeatOne", type: "wav")
+                        print("chainsawTypeBeatOne")
+                    }
+                    else {stopSound(sound: "chainsawTypeBeatOne", type: "wav")}
+                }
+                
+                else{
+                    print("no sound played")
+                }
+=======
                 })
             .onChange(of: longPressGesture, perform:
                         {value in
@@ -39,6 +87,7 @@ struct ContentView: View {
                 } else {
                     stopSound(sound: "chainsawOne", type: "wav")
                 }
+>>>>>>> 3a83f8ea1dff1c6bbeb0aabb292481e848473b61
             })
             
         }
