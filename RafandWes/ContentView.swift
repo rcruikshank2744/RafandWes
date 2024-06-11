@@ -13,24 +13,29 @@ import AVFoundation
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
+    
+    let impactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
     @State var longPressGesture = false
+<<<<<<< HEAD
     let soundSelect = Int.random(in: 0..<4)
 
+=======
+>>>>>>> 3a83f8ea1dff1c6bbeb0aabb292481e848473b61
     var body: some View {
-        
-        ZStack {
-            
-            Button(action:{longPressGesture.toggle()}) {
+        ZStack{
+            Button(action:{
+                longPressGesture.toggle()
+            }) {
                 Image("transparentChainsaw")
                     .resizable()
                     .frame(width: 400, height: 800)
                     .background(Color.red)
             }
-            
             .simultaneousGesture(LongPressGesture(minimumDuration: 0.1)
                 .onEnded{ _ in
                     print("long press ended")
                     longPressGesture.toggle()
+<<<<<<< HEAD
             })
             
             .onChange(of: longPressGesture, perform: {
@@ -72,10 +77,30 @@ struct ContentView: View {
                 else{
                     print("no sound played")
                 }
+=======
+                })
+            .onChange(of: longPressGesture, perform:
+                        {value in
+                if longPressGesture {
+                    playSound(sound: "chainsawOne", type: "wav")
+                    impactFeedbackGenerator.impactOccurred()
+                } else {
+                    stopSound(sound: "chainsawOne", type: "wav")
+                }
+>>>>>>> 3a83f8ea1dff1c6bbeb0aabb292481e848473b61
             })
             
         }
         
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }

@@ -20,8 +20,9 @@ func playSound(sound: String, type: String) {
             audioPlayer?.play()
             
             print("sound file played successfully")
+        } catch {
+            print("could not play sound")
         }
-        catch {print("could not play sound")}
     }
 }
 func stopSound(sound: String, type: String) {
@@ -33,7 +34,8 @@ func stopSound(sound: String, type: String) {
             audioPlayer?.stop()
             
             print("sound file stopped successfully")
-        } 
-        catch {print("could not play stop sound")}
+        } catch {
+            print("could not play stop sound")
+        }
     }
 }
