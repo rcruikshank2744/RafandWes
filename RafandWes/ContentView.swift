@@ -17,8 +17,20 @@ struct ContentView: View {
     let impactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
     @State var longPressGesture = false
     let soundSelect = Int.random(in: 0..<4)
-
+    @State private var change = false
     var body: some View {
+        Vstack(spacing: 40){
+            RoundedRectangle(cornerRadius: 15)
+                .foregroundColor(.green)
+                .frame(width:300, height: 300)
+                .padding()
+                .hueRotation(Angle.degrees(change ? 210: 0))
+                .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/, value: change)
+            image()
+                .resizable()
+                .scaledToFit() //need to fix these errors
+            
+        }
         ZStack{
             Button(action:{
                 longPressGesture.toggle()
