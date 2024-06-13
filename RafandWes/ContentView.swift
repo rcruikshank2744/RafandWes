@@ -16,7 +16,7 @@ struct ContentView: View {
 
     let impactFeedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
     @State var longPressGesture = false
-    let soundSelect = Int.random(in: 0..<4)
+    let soundSelect = Int.random(in: 0..<5)
 
     var body: some View {
         ZStack{
@@ -70,10 +70,18 @@ struct ContentView: View {
                     else {stopSound(sound: "chainsawTypeBeatOne", type: "wav")}
                 }
                 
+                else if(soundSelect == 4){
+                    if longPressGesture {
+                        playSound(sound: "dogBark", type: "mp3")
+                        print("dogBark")
+                    }
+                    else {stopSound(sound: "dogBark", type: "mp3")}
+                }
+                
                 else{
                     print("no sound played")
                 }
-
+            
             })
             
         }
